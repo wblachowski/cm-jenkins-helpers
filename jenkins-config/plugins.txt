@@ -1,0 +1,7 @@
+gradle:1.36
+git:4.3.0
+job-dsl:1.77
+configuration-as-code:1.43
+workflow-aggregator:2.6
+webhook-step:1.4
+pipeline-utility-steps:2.6.1

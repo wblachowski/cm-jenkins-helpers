@@ -1,0 +1,4 @@
+jobs:
+  - file: /usr/share/jenkins/ref/casc/jobs/job-prod-deploy.groovy
+  - file: /usr/share/jenkins/ref/casc/jobs/job-stg-deploy.groovy
+  - file: /usr/share/jenkins/ref/casc/jobs/job-sync-repos.groovy

@@ -1,0 +1,40 @@
+jenkins:
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+  disableRememberMe: false
+  mode: NORMAL
+  numExecutors: 4
+  primaryView:
+    all:
+      name: "all"
+  quietPeriod: 5
+  scmCheckoutRetryCount: 0
+  securityRealm:
+    local:
+      allowsSignup: false
+      enableCaptcha: false
+      users:
+        - id: @JENKINS_USERNAME@
+          password: @JENKINS_PASSWORD@
+  slaveAgentPort: 50001
+  views:
+    - all:
+        name: "All"
+credentials:
+  system:
+    domainCredentials:
+      - credentials:
+          - usernamePassword:
+              scope: GLOBAL
+              id: dev-repo-credentials
+              username: @DEV_REPO_USERNAME@
+              password: @DEV_REPO_PASSWORD@
+          - usernamePassword:
+              scope: GLOBAL
+              id: adobe-repo-credentials
+              username: @ADOBE_REPO_USERNAME@
+              password: @ADOBE_REPO_PASSWORD@
