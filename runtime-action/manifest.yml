@@ -1,0 +1,16 @@
+packages:
+  __APP_PACKAGE__:
+    license: Apache-2.0
+    actions:
+      notify-jenkins:
+        function: actions\notify-jenkins\index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          JENKINS_WEBHOOK_URL: $JENKINS_WEBHOOK_URL
+          ORGANIZATION_ID: $ORGANIZATION_ID
+          TECHNICAL_ACCOUNT_EMAIL: $TECHNICAL_ACCOUNT_EMAIL
+          CLIENT_ID: $CLIENT_ID
+          CLIENT_SECRET: $CLIENT_SECRET
+          PRIVATE_KEY: $PRIVATE_KEY
+          META_SCOPE: $META_SCOPE

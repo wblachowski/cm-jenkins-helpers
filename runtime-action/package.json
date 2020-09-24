@@ -1,0 +1,22 @@
+{
+  "name": "UnableChocolateCat",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@adobe/aio-sdk": "^2.3.0",
+    "@adobe/jwt-auth": "^0.3.1",
+    "axios": "^0.20.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "@openwhisk/wskdebug": "^1.2.0"
+  },
+  "scripts": {
+    "test": "jest --passWithNoTests ./test",
+    "e2e": "jest --collectCoverage=false --testRegex ./e2e"
+  },
+  "engines": {
+    "node": "^10 || ^12"
+  }
+}
