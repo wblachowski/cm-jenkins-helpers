@@ -1,6 +1,6 @@
 # CM with Jenkins Runtime Action
 
-This directory contains source code files for Adobe I/O Runtime Action meant to handle incoming events from CM and post them to a Jenkins instance.
+This directory contains source files for Adobe I/O Runtime Action meant to handle incoming events from CM and post them to a Jenkins instance.
 
 ## Config
 
