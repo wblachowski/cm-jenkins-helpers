@@ -1,5 +1,7 @@
 # CM with Jenkins Runtime Action
 
+This directory contains source code files for Adobe I/O Runtime Action meant to handle incoming events from CM and post them to a Jenkins instance.
+
 ## Config
 
 ### `.env`
@@ -8,8 +10,8 @@
 # This file must not be committed to source control
 
 ## please provide your Adobe I/O Runtime credentials
-# AIO_RUNTIME_AUTH=
-# AIO_RUNTIME_NAMESPACE=
+AIO_RUNTIME_AUTH=
+AIO_RUNTIME_NAMESPACE=
 
 ## additionally, put in all additional parameters
 ## Jenkins endpoint to call
