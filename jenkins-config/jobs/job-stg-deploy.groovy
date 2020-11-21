@@ -1,5 +1,3 @@
-import javaposse.jobdsl.dsl.DslFactory
-DslFactory.newInstance().
 pipelineJob('stg-deploy') {
     parameters {
         stringParam( "PIPELINE_ID", "@STG_PIPELINE_ID@" )

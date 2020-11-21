@@ -1,5 +1,3 @@
-import javaposse.jobdsl.dsl.DslFactory
-DslFactory.newInstance().
 pipelineJob('prod-deploy') {
     parameters {
         stringParam( "PIPELINE_ID", "@PROD_PIPELINE_ID@" )
