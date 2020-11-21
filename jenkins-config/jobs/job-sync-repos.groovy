@@ -1,5 +1,3 @@
-import javaposse.jobdsl.dsl.DslFactory
-DslFactory.newInstance().
 pipelineJob('sync-repos') {
     definition {
         cps {
